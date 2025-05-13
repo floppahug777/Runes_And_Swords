@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/kost">
+
+    <FrameLayout
+        android:id="@+id/charLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!--<Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="start process"
+            android:id="@+id/probutton"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="200dp"/>-->
+        <ImageView
+            android:layout_width="425dp"
+            android:layout_height="500dp"
+            android:src="@drawable/oak"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="350dp"
+            android:tint="#70000000"
+            tools:ignore="UseAppTint" />
+
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:src="@drawable/kamen_photoroom"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="450dp"
+            android:layout_marginStart="50dp"
+            android:tint="#70000000"
+            tools:ignore="UseAppTint" />
+
+        <Button
+            android:id="@+id/greenButton"
+            android:layout_width="84dp"
+            android:layout_height="105dp"
+            android:background="@drawable/pixil_frame_0__1__photoroom"
+            android:text="green"
+            android:textSize="0sp"
+            app:backgroundTint="@null"
+            android:layout_marginTop="550dp"
+            android:layout_marginStart="80dp"/>
+
+        <Button
+            android:id="@+id/redButton"
+            android:layout_width="84dp"
+            android:layout_height="105dp"
+            android:background="@drawable/pixil_frame_0__2__photoroom"
+            android:text="red"
+            android:textSize="0sp"
+            app:backgroundTint="@null"
+            android:layout_marginTop="545dp"
+            android:layout_marginStart="240dp"/>
+
+        <Button
+            android:id="@+id/yellowButton"
+            android:layout_width="84dp"
+            android:layout_height="105dp"
+            android:background="@drawable/pixil_frame_0__3__photoroom"
+            android:text="yellow"
+            android:textSize="0sp"
+            app:backgroundTint="@null"
+            android:layout_marginTop="480dp"
+            android:layout_marginStart="160dp"/>
+
+        <Button
+            android:id="@+id/blueButton"
+            android:layout_width="84dp"
+            android:layout_height="105dp"
+            android:background="@drawable/pixil_frame_0_photoroom"
+            android:text="blue"
+            android:textSize="0sp"
+            app:backgroundTint="@null"
+            android:layout_marginTop="620dp"
+            android:layout_marginStart="165dp"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/endLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Игра окончена"
+            android:padding="16dp"
+            android:textSize="24sp"
+            android:textColor="@android:color/black">
+        </TextView>
+
+
+        <TextView
+            android:id="@+id/maxScoreText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:padding="16dp"
+            android:textSize="24sp"
+            android:textColor="@android:color/black">
+        </TextView>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/tomenuButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|start"
+            android:background="@drawable/knpause"
+            android:text="*"
+            android:textSize="0sp"
+            app:backgroundTint="@null"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/scoreTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|end"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="Счёт: 0"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            tools:ignore="MissingConstraints" />
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/weaponView"
+        android:src="@drawable/titansword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="-160dp"
+        android:rotation="-25"
+    />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
